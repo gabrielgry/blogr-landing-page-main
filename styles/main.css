@@ -31,6 +31,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /*----------------------------------------
  *              Typography
  *---------------------------------------*/
@@ -88,7 +93,7 @@ p {
 }
 
 .i-arrow {
-  background-image: url("/images/icon-arrow-light.svg");
+  background-image: url("../images/icon-arrow-light.svg");
 }
 
 .i-arrow--active {
@@ -97,23 +102,23 @@ p {
 
 @media screen and (max-width: 800px) {
   .i-arrow {
-    background-image: url("/images/icon-arrow-dark.svg");
+    background-image: url("../images/icon-arrow-dark.svg");
   }
 }
 
 .i-hamburger {
-  background-image: url("/images/icon-hamburger.svg");
+  background-image: url("../images/icon-hamburger.svg");
 }
 
 .i-close {
-  background-image: url("/images/icon-close.svg");
+  background-image: url("../images/icon-close.svg");
 }
 
 /*----------------------------------------
  *              Header
  *---------------------------------------*/
 header {
-  width: 100vw;
+  width: 100%;
   height: 600px;
   border-radius: 0 0 0 100px;
   background-image: url("../images/bg-pattern-intro.svg"),
