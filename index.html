@@ -1,99 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel='stylesheet' href='styles/normalize.css'>
+  <link rel='stylesheet' href='styles/main.css'>
+
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Product
+  <header>
+    <nav>
+      <div class='mobile-topbar'>
+        <a class='logo' href=''><img src='images/logo.svg' alt='Blogr'></a>
+        <div class='menu'><span class='i i-hamburger'></div>
+      </div>
+      <div class='nav__container'>
+        <ul class='nav__list'>
+          <li class='nav__dropdown'>
+            <a class='nav__link'>Product
+              <span class="dropdown__icon i i-arrow">
+            </a>
+            <div class='dropdown__subnav'>
+              <ul class='dropdown__list'>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Overview</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Pricing</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Marketplace</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Features</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Integrations</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class='nav__dropdown'>
+            <a class='nav__link'>Company
+              <span class="dropdown__icon i i-arrow">
+            </a>
+            <div class='dropdown__subnav'>
+              <ul class='dropdown__list'>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>About</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Team</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Blog</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class='nav__dropdown'>
+            <a class='nav__link'>Connect
+              <span class="dropdown__icon i i-arrow">
+            </a>
+            <div class='dropdown__subnav'>
+              <ul class='dropdown__list'>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Contact</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>Newsletter</a></li>
+                <li class='dropdown__item'><a class='dropdown__link' href=''>LinkedIn</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <div class='auth'>
+          <a href='' class='nav__link'>Login</a>
+          <a href='' class='btn'>Sign Up</a>
+        </div>
+      </div>
+    </nav>
+    <div class='intro'>
+      <h1 class='intro__header'>A modern publishing platform</h1>
+      <p class='intro__text'>
+        Grow your audience and build your online brand
+      </p>
+      <div class='intro__actions'>
+        <a href='' class="btn btn--light">Start for Free</a>
+        <a href='' class="btn btn--outline">Learn More</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    Designed for the future
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+    Introducing an extensible editor
+    Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+    change the looks of a blog.
 
-  Company
+    Robust content management
+    Flexible content management enables users to easily move through posts. Increase the usability of your blog
+    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
 
-  About
-  Team
-  Blog
-  Careers
+    State of the Art Infrastructure
+    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
 
-  Connect
+    Free, open, simple
+    Blogr is a free and open source application backed by a large community of helpful developers. It supports
+    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+    Powerful tooling
+    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
+    but
+    capable of producing even the most complicated sites.
+  </main>
+  <footer>
+    Product
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+    Overview
+    Pricing
+    Marketplace
+    Features
+    Integrations
 
-  Start for Free
-  Learn More
+    Company
 
-  Designed for the future
+    About
+    Team
+    Blog
+    Careers
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+    Connect
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Contact
+    Newsletter
+    LinkedIn
+  </footer>
+  <script type='text/javascript' src='js/navigation.js'></script>
 </body>
+
 </html>
