@@ -116,7 +116,7 @@ header {
   width: 100vw;
   height: 600px;
   border-radius: 0 0 0 100px;
-  background-image: url("./images/bg-pattern-intro.svg"),
+  background-image: url("../images/bg-pattern-intro.svg"),
     linear-gradient(to left, var(--grad-intro) 30%, var(--grad-intro-light));
   background-position: 25% center;
   background-size: 200%;
