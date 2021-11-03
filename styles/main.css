@@ -268,12 +268,23 @@ hr {
   }
 
   .nav__container {
-    width: 100%;
+    position: absolute;
+    width: calc(100% - 48px);
+    margin: 64px 24px 0;
     padding: 24px;
+    max-height: 500px;
     flex-direction: column;
     border-radius: 4px;
     background-color: var(--white);
     box-shadow: 0px 28px 62px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav__container--hidden {
+    max-height: 0;
+    padding: 0;
   }
 
   .nav__list {
@@ -302,17 +313,19 @@ hr {
     position: relative;
     left: auto;
     visibility: hidden;
-    height: 0;
-    opacity: 1;
+    max-height: 0;
+    opacity: 0;
     width: 100%;
     padding-top: 0;
     margin: 16px 0;
     z-index: 0;
+    transition: 0.2s ease-in-out;
   }
 
   .dropdown__subnav--show {
     visibility: visible;
-    height: auto;
+    max-height: 500px;
+    opacity: 1;
   }
 
   .dropdown__list {
