@@ -71,8 +71,6 @@ function navigation(mobileQuery) {
   }
 }
 
-var mobileQuery = window.matchMedia("(max-width: 800px)");
+var mobileQuery = window.matchMedia("screen and (max-width: 800px)");
 navigation(mobileQuery);
 mobileQuery.addEventListener("change", navigation);
-
-//Hamburger menu
